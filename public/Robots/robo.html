@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robots</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        * {
+            font-family: 'Red Hat Display', sans-serif;
+            font-weight: 700;
+        }
+
+        #home {
+            display: inline-block;
+            width: 100%;
+            height: 800px;
+            margin: 0px 0px 0px 0px;
+            background-image: url(./images/CoverStory_robots.jpg);
+            background-size: cover;
+        }
+
+        .inner_1 {
+            color: aliceblue;
+            display: inline-block;
+            width: 679px;
+            height: 400px;
+            position: absolute;
+            right: 35px;
+            top: 195px;
+            /* border: 5px solid white; */
+            padding: 35px;
+        }
+
+        .in_1_1 {
+            /* border: 2px solid rgb(123, 123, 238); */
+            display: inline-block;
+            width: 612px;
+            margin: 5px;
+            font-size: 96px;
+        }
+
+        .in_1_2 {
+            /* border: 2px solid rgb(241, 121, 121); */
+            display: inline-block;
+            width: 612px;
+            margin: 30px 5px 5px 5px;
+            font-size: 25px;
+            line-height: 45px;
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            right: 110px;
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 110px;
+            top: 7px;
+        }
+
+        .logo {
+            width: 100px;
+            height: auto;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            margin: 15px 14px 14px 14px;
+        }
+
+        .navbar li a {
+            font-size: 15px;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-weight: 50000px;
+        }
+
+        .navbar li a.active,
+        .navbar li a:hover {
+            color: rgb(217, 227, 181);
+        }
+
+        .tecnews {
+            display: inline-block;
+            height: 450px;
+            width: 1180px;
+            position: relative;
+            left: 100px;
+            margin: 70px;
+        }
+
+        .t1 {
+            display: inline-block;
+            width: 50%;
+            padding-top: 55px;
+            font-size: 18px;
+        }
+
+        .tecimg {
+            display: inline-block;
+            width: 50%;
+            height: 450px;
+            position: absolute;
+            right: 0.5px;
+
+        }
+
+        .t1 p {
+            display: inline-block;
+            padding-right: 20px;
+            line-height: 28px;
+        }
+
+        .work {
+            /* border: 2px solid black;  */
+            display: inline-block;
+            height: 490px;
+            width: 100%;
+        }
+
+        .w1 {
+            display: inline-block;
+            width: 50%;
+            height: 490px;
+            background-color: rgb(29, 26, 26);
+            position: absolute;
+            left: 1px;
+
+        }
+
+        .w2 {
+            display: inline-block;
+            width: 50%;
+            height: 490px;
+            background-color: rgb(51, 131, 188);
+            position: absolute;
+            right: 0.5px;
+        }
+
+        .w3 {
+            display: inline-block;
+            width: 495px;
+            position: absolute;
+            right: 150px;
+            top: 10px;
+            color: rgb(255, 255, 255);
+            line-height: 30px;
+            font-size: 18px;
+        }
+
+        .w1_1 {
+            display: inline-block;
+            height: 230px;
+            position: relative;
+            left: 180px;
+            top: 190px;
+        }
+
+        .w1_2 {
+            display: inline-block;
+            height: 230px;
+            margin: 0px;
+            position: relative;
+            right: 0px;
+            top: 190px;
+        }
+
+        .w1 img {
+            display: inline-block;
+            height: 230px;
+            width: 200px;
+            margin: 0px;
+        }
+
+        .ces {
+            /* border: 2px solid black; */
+            display: inline-block;
+            height: 550px;
+            width: 1180px;
+            margin: 70px 70px 30px 70px;
+            position: relative;
+            left: 100px;
+        }
+
+        .red {
+            color: white;
+            background-color: rgb(220, 92, 92);
+            display: inline-block;
+            width: 33%;
+            height: 49%;
+            box-sizing: border-box;
+            padding: 45px;
+            position: absolute;
+            font-size: 18px;
+        }
+
+        .img1 {
+            display: inline-block;
+            width: 33%;
+            height: 49%;
+            position: absolute;
+            top: 51%;
+        }
+
+        .c1 {
+            height: 100%;
+            width: 100%;
+        }
+
+        .img2 {
+            display: inline-block;
+            width: 33%;
+            height: 100%;
+            position: absolute;
+            left: 33.0002%;
+            margin: 0px 12px 0px 12px;
+        }
+
+        .c2 {
+            height: 100%;
+            width: 100%;
+        }
+
+        .text {
+            color: white;
+            background-color: rgb(51, 131, 188);
+            display: inline-block;
+            width: 31.9%;
+            height: 100%;
+            position: absolute;
+            right: 0.5px;
+            box-sizing: border-box;
+            padding: 140px 40px 150px 40px;
+            line-height: 28px;
+            font-size: 18px;
+        }
+
+        .btn {
+            color: white;
+            background-color: rgb(51, 131, 188);
+            display: inline-block;
+            height: 50px;
+            width: 165px;
+            position: relative;
+            left: 43%;
+            margin: 45px;
+            font-size: 18px;
+            font-weight: bolder;
+            cursor: pointer;
+            border: none;
+        }
+
+        .in {
+            color: white;
+            display: inline-block;
+            height: 541px;
+            width: 100%;
+            background-color: rgb(45, 44, 44);
+            line-height: 28px;
+            margin-bottom: 35px;
+        }
+
+        .in_1 {
+            display: inline-block;
+            height: 420px;
+            width: 1180px;
+            margin: 80px;
+            position: absolute;
+            left: 65px;
+        }
+
+        .rob {
+            display: inline-block;
+            height: 100%;
+            width: 33%;
+            position: absolute;
+            left: -1%;
+            padding: 10px;
+            box-sizing: border-box;
+            padding: 100px 40px 40px 40px;
+        }
+
+        .eng {
+            display: inline-block;
+            height: 100%;
+            width: 33%;
+            position: absolute;
+            right: 34%;
+            padding: 10px;
+            box-sizing: border-box;
+            padding: 100px 30px 30px 30px;
+        }
+
+        .ind {
+            display: inline-block;
+            height: 100%;
+            width: 33%;
+            position: absolute;
+            right: 0%;
+            padding: 100px 40px 40px 40px;
+            box-sizing: border-box;
+        }
+
+        .in h3 {
+            color: rgb(214, 85, 85);
+            font-size: 30px;
+        }
+
+        .tren {
+            display: inline-block;
+            width: 797px;
+            height: 218px;
+            position: relative;
+            left: 23%;
+            margin-bottom: 20px;
+            line-height: 28px;
+            padding: 30px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .tren h3 {
+            color: rgb(214, 85, 85);
+            font-size: 33px;
+        }
+
+        .cup {
+            display: inline-block;
+            width: 1180px;
+            height: 461px;
+            position: relative;
+            left: 180px;
+            margin: 48px;
+        }
+
+        .cup img {
+            display: inline-block;
+            width: 33%;
+            height: 100%;
+        }
+
+        .quo {
+            display: inline-block;
+            width: 100%;
+            height: 512px;
+            background-color: black;
+            color: white;
+            font-size: 25px;
+            padding: 190px 250px 120px 300px;
+            box-sizing: border-box;
+            line-height: 45px;
+        }
+
+        .quo h3 {
+            display: inline-block;
+            width: 200px;
+            position: relative;
+            right: -800px;
+            bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        footer {
+            display: inline-block;
+            background-color: black;
+            width: 100%;
+            height: 50px;
+            position: relative;
+            top: -3px;
+            margin-bottom: -10px;
+        }
+
+        .foot {
+            text-align: center;
+            font-size: 13px;
+            font-weight: 500;
+            color: white;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="robo" id="home">
+        <div class="right">
+            <ul class="navbar">
+                <li> <a href="#" class="active">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <div class="inner_1">
+            <div class="in_1_1" ;>Robots Are the Future</div>
+            <div class="in_1_2" ;>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Labore maiores aperiam accusamus dolor amet.
+            </div>
+        </div>
+    </div>
+    <div class="tecnews">
+        <img class="tecimg" src="./images/robot001.jpg" alt="tecnews">
+        <div class="t1">
+            <h3>TECHNOLOGY NEWS</h3>
+            <h1>Human-Robot</h1>
+            <p>In human-robot collaboration, the robot assists the human operator.
+                This means: The machine does not replace the human, but complements his
+                capabilities and relives him of arduous tasks. These can include overhead work, for example,
+                or the lifting of heavy loads. Autonomous,
+                collaborative robots are also used to supply production workstaion.
+            </p>
+        </div>
+    </div>
+    <div class="work">
+        <div class="w1">
+            <img src="./images/2.jpg" class="w1_1">
+            <img src="./images/fe2467310eefa5fc864cd6ab8ce88531.jpg" class="w1_1">
+            <img src="./images/Untitled4.jpg" class="w1_1">
+            <div class="w3">
+                <h2>FUTURE OF WORK</h2>
+                <P>While much of the discourse AI and automation has been
+                    concerned with the looming threat to the workforce...
+                </P>
+            </div>
+        </div>
+        <div class="w2">
+            <img src="./images/1.jpg" class="w1_2">
+            <img src="./images/technology_default_2.jpg" class="w1_2">
+            <img src="./images/Untitled5.jpg" class="w1_2">
+        </div>
+    </div>
+    <div class="ces">
+        <div class="red">
+            <h1>The robots of CES 2019</h1>
+        </div>
+        <div class="img1">
+            <img src="./images/z.jpg" class="c1">
+        </div>
+        <div class="img2"> <img src="./images/636e31a208d5ea88d839b88b582e2a46.jpg" class="c2"></div>
+        <div class="text">
+            <p>
+                Hitting the show floor at CES can be something of a challenge.
+                There are so many choices, it's almost impossible to figure out where
+                to even start. So this year, I got to narrow my focus to just one area-robotics-and
+                it made my job a lot easier. Or it should have. Turn out,
+                there are so many choices in the field of robotics, I was back where I started.
+            </p>
+        </div>
+    </div>
+    <div class="button">
+        <button class="btn">learn more</button>
+    </div>
+    <div class="in">
+        <div class="in_1">
+            <div class="rob">
+                <h3>
+                    Robotization
+                </h3>
+                <p>
+                    When the first industiral revolution hit
+                    Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit. Natus aut impedit necessitatibus?
+                    Mollitia itaque exercitationem vero.
+                </p>
+            </div>
+            <div class="eng">
+                <h3>Engineering</h3>
+                <p>When the first industrial revolution Hit
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Eos dolores deleniti voluptatibus quia quidem sapiente, dolorem quos, architecto
+                    suscipit.
+                </p>
+            </div>
+            <div class="ind">
+                <h3>Industry</h3>
+                <p>When the first industrial revolution Hit
+                    Lorem ipsum, dolor sit amet consectetur
+                    adipisicing elit. Dicta soluta molestiae aspernatur,
+                    asperiores vero.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="tren">
+        <h3>Technology Trends</h3>
+        <p>Meximum flexibility in production. Relief of employees by performing
+            ergonomicall unfavorable work steps that could not previously be automated
+        </p>
+    </div>
+    <div class="cup">
+        <img src="./images/Untitled2.jpg" class="im1">
+        <img src="./images/2.jpg" class="im2">
+        <img src="./images/robotsdos620x349.jpg" class="im3">
+    </div>
+    <div class="quo">
+        <p>
+            We need to know what the resources of the moon are. We have great
+            evidence now because of different kinds of radar and spectroscopic
+            analysis that people have been able to do. But we really do need to
+            go visit there, and we can do that with a robot craft without any
+            problem.
+        </p>
+        <h3>- Jeff Bezos -</h3>
+    </div>
+    <footer>
+        <div class="foot">
+            &#169 Copyright 2023. Made by Rishabh Gupta
+        </div>
+    </footer>
+</body>
+
+</html>

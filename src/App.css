@@ -133,7 +133,7 @@ body {
 }
 
 .front {
-  background-image: url("image/g-g0\(93\).jpg");
+  background-image: url("./background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -593,7 +593,7 @@ body {
 }
 
 .cont{
-  background-image: url("image/g-g0\(93\).jpg");
+  background-image: url("./background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;

@@ -7,7 +7,7 @@ function Home() {
             <nav className="header">
                 <ul className="left">
                     <li>
-                        <div className="logo"><a href="./index1.html"><img src="%PUBLIC_URL%/image/fotor_2023-3-26_2_55_47.ico" alt="logo" /></a></div>
+                        <div className="logo"><a href="./index1.html"><img src="../image/fotor_2023-3-26_2_55_47.ico" alt="logo" /></a></div>
                     </li>
                     <li>
                         <span className="name"><a href="./index1.html">rishabh gupta</a></span>
@@ -138,7 +138,7 @@ function Home() {
                                 created in which i used HTML and CSS only. This is my first website
                                 in which i did not used flex and grid property of CSS.
                             </p>
-                            <a href="./portfolio1/index.html"><button className="view">view</button></a>
+                            <a href="./portfolio1/port.html"><button className="view">view</button></a>
                         </div>
                     </div>
                 </div>
